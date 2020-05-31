@@ -1,27 +1,24 @@
 {
     "manifest_version": 2,
-  
     "name": "Trigger Finder Plugin",
     "description": "This extension will find sentences that can trigger emetophobic people",
     "version": "1.0",
-
+    "icons": {
+      "16": "images/icon_16.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    },
     "content_scripts": [{
-        "css": ["styles.css"],
-        "js": ["content.js"],
+        "js": ["/js/content.js"],
         "matches": ["<all_urls>"]
       }],
-
-    "background":
-    {
-        "scripts": ["thirdParty/jquery.js", "background.js"]
-    },
-  
     "browser_action": {
-     "default_icon": "icon.png",
-     "default_popup": "popup.html"
+     "default_icon": "/images/icon_16.png",
+     "default_popup": "/html/popup.html"
     },
     "permissions": [
      "activeTab",
-     "http://127.0.0.1:5000/*"
+     "http://127.0.0.1:5000/*",
+     "storage"
      ]
   }

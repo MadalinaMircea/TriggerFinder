@@ -1,0 +1,14 @@
+html, body
+{
+    width: 400px;
+}
+
+body {
+  padding: 30px;
+  background-color: lavenderblush;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+}
