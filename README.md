@@ -16,7 +16,16 @@ This application is made up of a server (in the "backend" folder) and a client (
     - Download the pickle file (this will take some time)
     - Create folders such that this path exists: "backend/TriggerFinder/*PretrainedUtils/w2v*"
     - Copy and paste the pickle file in the w2v folder you created
-    *Thanks to akshayuppal3 and the "language_vision" repository for this part*
+*Thanks to akshayuppal3 and the "language_vision" repository for this part*
+- To start the server:
+    - install flask 
+    ...
+    pip install flask
+    ...
+    - create a python virtual environment in "backend/TriggerFinder" ((Windows) python -m venv venv   |   (Ubuntu) python3 -m venv venv)
+    - start the virtual environment ((Windows) venv\Scripts\activate   |   (Ubuntu)source venv/bin/activate)
+    - set the main file: export FLASK_APP=main.py
+    - start the server (flask run)
 
 
 ### Frontend:
