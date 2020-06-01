@@ -8,7 +8,3 @@ pip install --update nltk==3.5
 pip install --update numpy==1.18.4
 pip install flask
 set FLASK_APP=main.py
-python
-import nltk
-nltk.download('stopwords')
-nltk.download('wordnet')
