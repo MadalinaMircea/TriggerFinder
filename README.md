@@ -35,7 +35,8 @@ This application is made up of a server (in the "backend" folder) and a client (
     ```
     - set the main file: 
     ```
-    export FLASK_APP=main.py
+    (Windows) set FLASK_APP=main.py
+    (Ubuntu) export FLASK_APP=main.py
     ```
     - start the server (this will take some time)
     ```
