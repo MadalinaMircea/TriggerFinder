@@ -31,7 +31,9 @@ python -m venv venv
 ```
 python3 -m venv venv
 ```
-    - start the virtual environment
+    
+    
+   - start the virtual environment
 (Windows) 
 ```
 venv\Scripts\activate
@@ -40,8 +42,14 @@ venv\Scripts\activate
 ```
 source venv/bin/activate
 ```
-    - set the main file: export FLASK_APP=main.py
-    - start the server (flask run)
+   - set the main file: 
+```
+export FLASK_APP=main.py
+```
+   - start the server
+```
+flask run
+```
 
 
 ### Frontend:
