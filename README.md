@@ -19,10 +19,18 @@ This application is made up of a server (in the "backend" folder) and a client (
 *Thanks to akshayuppal3 and the "language_vision" repository for this part*
 - To start the server:
     - install flask 
-    ...
+    ```
     pip install flask
-    ...
-    - create a python virtual environment in "backend/TriggerFinder" ((Windows) python -m venv venv   |   (Ubuntu) python3 -m venv venv)
+    ```
+    - create a python virtual environment in "backend/TriggerFinder" 
+(Windows) 
+    ```
+    python -m venv venv
+    ```
+(Ubuntu) 
+    ```
+    python3 -m venv venv
+    ```
     - start the virtual environment ((Windows) venv\Scripts\activate   |   (Ubuntu)source venv/bin/activate)
     - set the main file: export FLASK_APP=main.py
     - start the server (flask run)
