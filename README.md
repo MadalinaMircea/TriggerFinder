@@ -5,7 +5,7 @@ This repository implements a Google Chrome extension that censors words and phra
 This application is made up of a server (in the "backend" folder) and a client (in the "frontent" folder). The "results" folder contains images with the results and the application in action. The "Google Colab files" folder contains the Colab notebook that creates the word2vec pickle file used for embedding. If you already have this file, skip the Google Colab stepx.
 
 ### Backend:
-- Prerequisites: Python 3.8.0, Keras 2.0, Tensorflow 2.2.0, NLTK 3.5, Numpy 1.18.4
+- Prerequisites: Python 3.8.0, Keras 2.0, Tensorflow 2.2.0, NLTK 3.5, Numpy 1.18.4 (For Windows, use the "bat" file provided in the repository)
 - To obtain the word2vec file, either:
 1. Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv , or
 2. If the transfer doesn't work:
@@ -17,7 +17,14 @@ This application is made up of a server (in the "backend" folder) and a client (
     - Download the pickle file (this will take some time)
 - Create folders such that this path exists: "backend/TriggerFinder/*PretrainedUtils/w2v*"
 - Copy and paste the pickle file in the w2v folder you created
-
+- Download the necessary nltk packages
+    ```
+    python
+    import nltk
+    nltk.download('stopwords')
+    nltk.download('wordnet')
+    exit()
+    ```
 - To start the server:
     - install flask 
     ```
