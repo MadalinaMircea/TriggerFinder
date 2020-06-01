@@ -7,9 +7,15 @@ This application is made up of a server (in the "backend" folder) and a client (
 ### Backend:
 - Prerequisites: Python 3.8.0, Keras 2.0, Tensorflow 2.2.0, NLTK 3.5, Numpy 1.18.4
 - To obtain the word2vec file, either:
-    1. Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv
-    or
-    2. If the transfer doesn't work,
+1. Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv , or
+2. If the transfer doesn't work:
+    - Go to Google Colab, upload and open the Trigger_Finder.ipynb notebook
+    - Download the GloVe 100-dimensional embeddings from the GloVe webside (see References)
+    - Upload the glove file to Google Colab (this will take some time)
+    - Run each piece of code in the notebook and wait for the pickle file to be created
+    - Download the pickle file (this will take some time)
+    - Create folders such that this path exists: "backend/TriggerFinder/*PretrainedUtils/w2v*"
+    - Copy and paste the pickle file in the w2v folder you created
 
 
 ### Frontend:
