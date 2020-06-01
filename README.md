@@ -6,8 +6,10 @@ This application is made up of a server (in the "backend" folder) and a client (
 
 ### Backend:
 - Prerequisites: Python 3.8.0, Keras 2.0, Tensorflow 2.2.0, NLTK 3.5, Numpy 1.18.4
-- Obtain the word2vec file:
-    - Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv
+- To obtain the word2vec file, either:
+    1. Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv
+    or
+    2. If the transfer doesn't work,
 
 
 ### Frontend:
