@@ -10,6 +10,7 @@ import numpy as np
 import os
 from Preprocessing.Normalization.Normalization import Normalization
 from math import sqrt
+import matplotlib.pyplot as plt
 
 
 def readEnsemble(data, accPath, modelPath):
@@ -345,3 +346,19 @@ def write_accuracies():
         lossFile.close()
 
     print(finalContent)
+
+
+def plot_csv_files(path):
+    for f in os.listdir(path):
+        if "loss" in f:
+            filePath = os.path.join(path, f)
+            file = open(filePath, "r")
+            X = []
+            Y = []
+            for line in file.readlines():
+                splitLine = line.split(',')
+                X.append(int(splitLine[0].strip()))
+                Y.append(float(splitLine[1].strip()))
+
+            plt.plot(X, Y)
+    plt.show()
