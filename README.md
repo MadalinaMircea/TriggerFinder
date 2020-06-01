@@ -2,10 +2,13 @@
 
 This repository implements a Google Chrome extension that censors words and phrases on webpages that can be triggering to people with emetophobia (a specific phobia of vomiting).
 
-This application is made up of a server (in the "backend" folder) and a client (in the "frontent" folder). The "results" folder contains images with the results and the application in action. The "Google Colab files" folder contains the Colab notebook that creates the word2vec pickle file used for embedding. If you already have this file, skip the Google Colab stepx.
+This application is made up of a server (in the "backend" folder) and a client (in the "frontent" folder). The "results" folder contains images with the results and the application in action. The "Google Colab files" folder contains the Colab notebook that creates the word2vec pickle file used for embedding. If you already have this file, skip the Google Colab step.
+
+- Video installation instructions: https://youtu.be/k_gxWVVMwMI
 
 ### Backend:
-- Prerequisites: Python 3.8.0, Keras 2.0, Tensorflow 2.2.0, NLTK 3.5, Numpy 1.18.4 (For Windows, use the "bat" file provided in the repository)
+- Prerequisites: Google Chrome, Python 3.8.0, Tensorflow 2.2.0, NLTK 3.5, Numpy 1.18.4 
+    - For Windows, use the .bat file provided in the repository
 - To obtain the word2vec file, either:
 1. Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv , or
 2. If the transfer doesn't work:
