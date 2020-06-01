@@ -36,13 +36,17 @@ This application is made up of a server (in the "backend" folder) and a client (
     ```
     export FLASK_APP=main.py
     ```
-    - start the server
+    - start the server (this will take some time)
     ```
     flask run
     ```
 
-
 ### Frontend:
+- Install the Moesif Origins & CORS Changer Chrome Extension and turn it on (Remember to turn it off when not using the extension because it will affect Youtube and other websites)
+- On Chrome, go to chrome://extensions
+- Turn on "Developer mode" (top right corner)
+- Click on "Load unpacked", navigate to the "TriggerFinder/frontend/TriggerFinderExtension" folder and click on "Select Folder"
+- The extension will be added in the top right corner of the browser. Click on it and toggle it on and off from the on/off button.
 
 ### References:
 - GloVe Twitter Embeddings: https://nlp.stanford.edu/projects/glove/
