@@ -35,7 +35,7 @@ function httpPost(url, element) {
 
 }
 
-elements = ["p"];//, "li", "h1", "h2"]
+elements = ["p", "li", "h1", "h2"];
 
 chrome.storage.sync.get(['currentState'], function (result) {
     console.log('Value currently is ' + result.currentState);
