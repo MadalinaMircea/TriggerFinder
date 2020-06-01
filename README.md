@@ -9,14 +9,15 @@ This application is made up of a server (in the "backend" folder) and a client (
 - To obtain the word2vec file, either:
 1. Try downloading it from this WeTransfer: https://we.tl/t-3esKK2SQHv , or
 2. If the transfer doesn't work:
+    - *Thanks to akshayuppal3 and the "language_vision" repository for this part*
     - Go to Google Colab, upload and open the Trigger_Finder.ipynb notebook (from the "Google Colab files" folder)
     - Download the GloVe 100-dimensional embeddings from the GloVe webside (see References)
     - Upload the glove file to Google Colab (this will take some time)
     - Run each piece of code in the notebook and wait for the pickle file to be created
     - Download the pickle file (this will take some time)
-    - Create folders such that this path exists: "backend/TriggerFinder/*PretrainedUtils/w2v*"
-    - Copy and paste the pickle file in the w2v folder you created
-    - *Thanks to akshayuppal3 and the "language_vision" repository for this part*
+- Create folders such that this path exists: "backend/TriggerFinder/*PretrainedUtils/w2v*"
+- Copy and paste the pickle file in the w2v folder you created
+
 - To start the server:
     - install flask 
     ```
